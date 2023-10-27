@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .hero{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: #fffffff3;
+        }
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 11px 18px;
+
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: #0303f1;
+}
+
+.detel{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.detel h1{
+    font-size: 50px;
+    color: #000000f2;
+    margin-bottom: 20px;
+}
+
+span{
+    color: orange;
+
+}
+ 
+.detel p{
+    color: rgba(0, 0, 0, 0.548);
+    line-height: 22px;
+}
+
+.detel a{
+        background: black;
+        padding: 10px 18px 5px 10px;
+        text-decoration: none;
+        font-weight: bold;
+        color: hsla(0, 0%, 100%, 0.865);
+        display: inline-block;
+        margin: 30px 10px;
+        border-radius: 7px;
+
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%); */
+    transition: bottom 1s, left 1s;
+
+}
+
+
+
+.container{
+    width: 100%;
+    padding: 50px 30px;
+    background-color: rgba(255,255,255,0.06);
+    border: 2px solid rgba(255,255,255,0.06);
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+}
+.container *{
+    font-family: "Poppins",sans-serif;
+    color: #0000ff;
+    font-weight: bold;
+}
+h2{
+    margin-bottom: 60px;
+    letter-spacing: 2px;
+}
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+.details{
+    width: 50%;
+    display: flex;
+    justify-content:space-evenly;
+    margin-bottom: 10px;
+}
+.bar{
+    position: relative;
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.06);
+    padding: 7px 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+.bar div{
+    position: relative;
+    width: 50%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #badefc;
+    border: 1px solid hsl(207, 96%, 27%);
+    box-shadow: 0 0 5px #1102de99;
+}
+#front-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 90%;
+    }
+}
+#backend-bar{
+    animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 75%;
+    }
+}
+#prog-bar{
+    animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+    100%{
+        width: 82%;
+    }
+}
+
+.sett{
+    width: 150px;
+    display:grid;
+    justify-content: space-between;
+    border-radius: 20px;
+
+}
+
+h1{
+        color: #0000ff;
+        font-size: 40px;
+        padding: 30px;
+        background-color: white;
+        margin-top: 10px;
+}
+
+
+.servicesText.card {
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+    color:hsla(323, 93%, 22%, 0.631);
+    font-size: 30px;
+    padding: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 18px;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+    
+}
+
+.card-text{
+    color: black;
+
+}
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+    </style>
+</head>
+<body>
+    <div class="hero">
+            <nav>
+                <img src="./download.png" class="logo">
+        <ul>
+
+        <li> <a href="#">HOME</a></li>
+        <li> <a href="#">ABOUT</a></li>
+        <li> <a href="#">PORTFOLIO</a></li>
+        <li> <a href="#"></a></li>
+        <li> <a href="#">SERVICES</a></li>
+        <li> <a href="#">HIRE ME</a></li>
+                
+    </ul>
+
+
+            </nav>
+            <div class="detel">
+                <h1>I'm Sunny <span>Kumar</span></h1>
+                <p>This is my official Portfolio website to shows all
+                <br>details and experience web development
+            </p>
+            <a class="down" href="#">DOWNLOAD CV</a>
+            <a href="#">CONTACT ME</a>
+            </div>
+            <div class="images">
+                <img src="./sunny-removebg-preview.png" alt="cv" class="girl">
+            </div>
+
+
+            <div class="container">
+                <h2>TECHNICAL SKILLS</h2>
+                <img class="sett"
+                src="./images.png" alt="pg">
+                <div class="skills">
+                    <div class="details">
+                        <span>Frontend</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="front-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>Backend</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="backend-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>Programming</span>
+                        <span>82%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="prog-bar"></div>
+                    </div>
+                </div>
+            </div>
+
+<!-- achievement and certification -->
+        <section class="container section" id="services">
+            <h1 class="text-center">Achievement And Certifications</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class="fas servicesIcon fa-clock"></i>
+                            <h4 class="card-title mt-3">Website Development</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-layer-group'></i>
+                            <h4 class="card-title mt-3">Website Design</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+    
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='far servicesIcon fa-check-circle'></i>
+                            <h4 class="card-title mt-3">Website Deployment</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+
+
+
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">your services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">afiliate program</a></li>
+
+                </ul>
+            </div>
+                <div class="footer-col"></div>
+                <h4>follow us</h4>
+                <ul>
+                    <li><a href="#"></a></li>
+                </ul>
+
+        </div>
+    </div>
+
+</footer>
+
+    </div>
+</body>
+</html>
